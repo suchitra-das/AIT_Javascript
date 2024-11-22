@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       
+
+        .navbar-1{
+            background-color:rgba(245, 245, 245, 0.726);
+            /* background-color:whitesmoke; */
+            
+        }
+
+        .navdiv{
+            
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        li{
+            list-style: none;
+            display: inline-block;
+        }
+
+        li a{
+            color: black;
+            font-size: 15px;
+           /* font-weight: bold; */
+           margin-right: 25px;
+        }
+
+
+        .container{
+            width: 220px;
+            height: 200px;
+            margin-top: 20px; 
+        }
+
+
+        #content { padding: 20px; }
+
+        .main{
+            text-decoration: none;
+            padding: 20px;
+            
+            color: #000;
+        }
+
+      #bum-1{
+            padding: 4px;
+            background-color: white;
+            color: #000;
+            text-decoration: none;
+
+        }
+
+        #bum-2{
+            padding:4px;
+            background-color: white;
+            color: #000;
+            text-decoration: none;
+
+        }
+
+
+        #bum-3{
+            padding: 4px;
+            background-color: white;
+            color: #000;
+            text-decoration: none;
+
+        }
+
+        
+    
+    </style>
+</head>
+<body>
+   <header>
+    
+
+
+
+          <nav class="navbar-1">
+           <div class="navdiv">
+                <div><h2>Ecommerce</h2></div>
+                <ul>
+                    <li><a href="#" onclick="loadPage('home.js.project.html')">Home</a></li>
+                    <li><a href="#" onclick="loadPage('products.html')">Products</a></li>
+                    <li><a href="#" onclick="loadPage('about.html')">About Us</a></li>
+                    <li><a href="#" onclick="loadPage('contact.html')">Contact</a></li>
+                    
+                    
+                </ul>
+
+                <div class="main">
+                    <button><a href="..\html\login-page.html" > <i class="fa-solid fa-arrow-right-to-bracket" id="bum-1" style="color: #0f0f10;"></i>Login</a></button>
+                    <button><a href="..\html\register.html"> Register</a></button>
+                    <!-- <button><a href="">cart</a></button> -->
+
+                    <button onclick="loadPage('cart-1.html')"><a><i class="fa-sharp-duotone fa-solid fa-cart-shopping" id="bum-3"></i>cart<span class="cart-count"></i>(0)</span></a></button>
+                </div>
+
+            </div>
+          </nav>
+
+
+          
+          <div id="content"></div>
+          <script  type="module" src="../js/cart.js"></script>
+          <script  type="module" src="../js/home.js"></script>
+          <script  type="module" src="../js/indexScript.js"></script>
+          
+         
+          
+   </header>
+</body>
+</html>
