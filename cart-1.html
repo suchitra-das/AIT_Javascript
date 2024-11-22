@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart in JS</title>
+    <style>
+
+    .navbar{ 
+        text-decoration: none;
+    }
+
+
+      
+        
+        .container{
+            justify-items: center;
+            font-size: 38px;
+            background-color: rgba(235, 237, 238, 0.767);
+            padding-top:20px;
+            width: 1200px;
+            margin-left: 30px;
+        
+        }
+
+        #btn{
+            border: 2px solid gray;
+            border-radius: 3px;
+            padding:4px;
+            flex-wrap: wrap;
+            margin-bottom:100px;
+            justify-items: center;
+   
+        }
+
+        hr{
+            width: 1200px;
+        }
+
+        .cart-container {
+             display: flex;
+            justify-content: space-between;
+            }
+
+   .item-list {
+    flex: 2;
+    margin-right: 20px;
+    }
+
+.order-summary {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="cart-container">
+        
+        <div id="cart-items" class="item-list">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <div id="cart-summary" class="order-summary">
+            <!-- Cart summary will be dynamically inserted here -->
+        </div>
+        <div id="cart-empty">
+            
+        </div>
+    </div>
+    
+
+    <footer>
+        <center style="color: gray; margin: 40px;"><p style="color: black;">Made with by <span style="color: red;">♥</span> <b style="color: gray;"><a href="#">Suchitra Das</a></b></p></center>
+    </footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
